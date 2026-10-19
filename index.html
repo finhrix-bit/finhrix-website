@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FINHRIX provides business management, Virtual CFO, accounting, bookkeeping, finance, compliance and outsourcing support for growing businesses in India.">
+  <title>FINHRIX | Business Management & Virtual CFO</title>
+  <meta name="theme-color" content="#102b55">
+  <style>
+    :root{--navy:#102b55;--blue:#2459a9;--pale:#edf4fc;--ink:#17243a;--muted:#617087;--line:#dce5f0;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:10}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:25px;font-weight:850;letter-spacing:2px;color:var(--navy)}.brand span{color:var(--blue)}
+    .navlinks{display:flex;gap:24px;align-items:center;font-size:14px;color:#35445b}.navlinks a:hover{color:var(--blue)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:8px;font-weight:700;font-size:14px;background:var(--navy);color:white;border:1px solid var(--navy);transition:.2s}.btn:hover{transform:translateY(-1px);background:var(--blue)}.btn.outline{background:transparent;color:var(--navy)}
+    .hero{background:radial-gradient(circle at 82% 20%,#dceaff 0,transparent 32%),linear-gradient(120deg,#f7faff,#fff 65%);padding:86px 0 78px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+    .eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--blue)}h1{font-size:clamp(38px,5vw,62px);line-height:1.08;letter-spacing:-1.8px;color:var(--navy);margin:16px 0 20px}h2{font-size:clamp(28px,3.2vw,40px);line-height:1.2;letter-spacing:-.8px;color:var(--navy);margin:0 0 14px}h3{margin:0 0 8px;color:var(--navy);font-size:19px}p{margin:0 0 16px;color:var(--muted)}.hero p{font-size:18px;max-width:620px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .visual{border:1px solid #d8e4f5;border-radius:24px;padding:24px;background:rgba(255,255,255,.85);box-shadow:0 22px 70px rgba(16,43,85,.12)}.visual-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:20px}.visual-label{font-size:13px;color:var(--muted)}.status{font-size:11px;color:#18734b;background:#e6f7ee;border-radius:20px;padding:5px 9px;font-weight:800}.metric{display:grid;grid-template-columns:1fr 1fr;gap:12px}.metric-card{padding:16px;border-radius:14px;background:var(--pale)}.metric-card strong{display:block;color:var(--navy);font-size:22px}.metric-card small{color:var(--muted)}.bars{display:flex;gap:9px;align-items:end;height:95px;padding:10px 4px 0;border-bottom:1px solid var(--line);margin-top:20px}.bars i{display:block;flex:1;border-radius:5px 5px 0 0;background:linear-gradient(#4e86d5,#2459a9)}
+    section{padding:78px 0}.section-head{max-width:700px;margin-bottom:34px}.center{text-align:center;margin-left:auto;margin-right:auto}.soft{background:#f6f9fd}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:15px;padding:25px;background:white;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(16,43,85,.07)}.icon{width:43px;height:43px;border-radius:12px;background:var(--pale);display:grid;place-items:center;color:var(--blue);font-size:20px;margin-bottom:18px}.card p{font-size:14px;margin:0}.feature{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.feature-panel{background:var(--navy);color:white;border-radius:20px;padding:32px}.feature-panel h3{color:white}.feature-panel p{color:#d8e5f7}.checks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}.check{display:flex;gap:10px;font-size:14px;color:#35445b}.check b{color:var(--blue)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step-num{width:38px;height:38px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800;margin-bottom:15px}.industries{display:flex;flex-wrap:wrap;gap:10px}.pill{border:1px solid var(--line);background:#fff;padding:10px 15px;border-radius:99px;color:#35445b;font-size:14px}
+    .cta{background:linear-gradient(120deg,#102b55,#1d4a8b);color:white;border-radius:22px;padding:45px;display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{color:white}.cta p{color:#d8e5f7}.cta .btn{background:white;color:var(--navy);border-color:white;white-space:nowrap}
+    .contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px}.contact-box{background:#f6f9fd;border-radius:16px;padding:28px}.contact-line{margin:16px 0;color:#35445b;overflow-wrap:anywhere}.contact-line strong{display:block;color:var(--navy);font-size:12px;text-transform:uppercase;letter-spacing:1px}
+    form{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-size:13px;font-weight:700;color:#35445b;display:block;margin-bottom:6px}input,select,textarea{width:100%;font:inherit;font-size:14px;border:1px solid #ccd8e7;border-radius:8px;padding:12px;background:white;color:var(--ink)}textarea{min-height:110px;resize:vertical}.full{grid-column:1/-1}.form-note{font-size:12px;color:var(--muted);margin-top:10px}
+    footer{background:#091d3a;color:#d7e3f4;padding:35px 0}.footer-row{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-brand{color:white;font-size:22px;font-weight:850;letter-spacing:2px}.footer-brand span{color:#8bb8ff}footer p{font-size:13px;color:#b6c6dc;margin:8px 0 0}.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
+    .mobile-toggle{display:none}
+    @media(max-width:850px){.navlinks{gap:12px}.navlinks a:not(.btn){display:none}.hero-grid,.feature,.contact-grid{grid-template-columns:1fr}.hero{padding:60px 0}.cards{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.visual{max-width:560px}.cta{align-items:flex-start;flex-direction:column}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,1120px)}.nav{height:66px}.brand{font-size:22px}.navlinks .btn{padding:10px 12px;font-size:12px}.cards,.steps,.metric{grid-template-columns:1fr}.hero p{font-size:16px}section{padding:56px 0}.checks{grid-template-columns:1fr}.cta{padding:28px}.footer-row{align-items:flex-start;flex-direction:column}form{grid-template-columns:1fr}.full{grid-column:auto}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="FINHRIX home">FINH<span>R</span>IX</a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#industries">Who We Serve</a><a href="#contact">Contact</a>
+      <a class="btn" href="#contact">Book a Consultation</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Business Management · Finance · Advisory</div>
+        <h1>Your Business.<br>Our Expertise.<br>One Partner for Growth.</h1>
+        <p>Integrated business management, Virtual CFO, accounting, finance, compliance and outsourcing support to help your business operate with clarity and grow with confidence.</p>
+        <div class="actions"><a class="btn" href="#services">Explore Our Services</a><a class="btn outline" href="https://wa.me/918233493868" target="_blank" rel="noopener">Connect on WhatsApp</a></div>
+      </div>
+      <div class="visual" aria-label="Illustrative financial management dashboard">
+        <div class="visual-top"><div><strong style="color:#102b55">Business Overview</strong><div class="visual-label">Clarity for better decisions</div></div><span class="status">INSIGHT-LED</span></div>
+        <div class="metric"><div class="metric-card"><small>Financial Planning</small><strong>Plan</strong><small>Budgets & forecasts</small></div><div class="metric-card"><small>Business Reporting</small><strong>Review</strong><small>MIS & performance</small></div></div>
+        <div style="margin-top:20px;color:#617087;font-size:13px;font-weight:700">A structured view of your business</div>
+        <div class="bars" aria-hidden="true"><i style="height:35%"></i><i style="height:55%"></i><i style="height:43%"></i><i style="height:70%"></i><i style="height:62%"></i><i style="height:88%"></i><i style="height:75%"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap feature">
+      <div class="section-head">
+        <div class="eyebrow">About FINHRIX</div>
+        <h2>Business support that connects the numbers to the bigger picture.</h2>
+        <p>FINHRIX Advisory Services Private Limited supports businesses with coordinated finance, accounting, compliance and operational services. Our approach is designed to bring structure to everyday processes and useful information to business decisions.</p>
+        <a class="btn outline" href="#contact">Discuss Your Requirements</a>
+      </div>
+      <div class="feature-panel">
+        <h3>One coordinated business partner</h3>
+        <p>Bring essential business support together through a service scope tailored to your organisation's needs and stage of growth.</p>
+        <div class="checks">
+          <div class="check" style="color:#fff"><b>✓</b> Financial visibility</div>
+          <div class="check" style="color:#fff"><b>✓</b> Structured processes</div>
+          <div class="check" style="color:#fff"><b>✓</b> Compliance coordination</div>
+          <div class="check" style="color:#fff"><b>✓</b> Scalable support</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="services">
+    <div class="wrap">
+      <div class="section-head center"><div class="eyebrow">What We Do</div><h2>Integrated solutions for everyday business needs</h2><p>Practical support across finance, accounting, compliance and business operations.</p></div>
+      <div class="cards">
+        <article class="card"><div class="icon">⌂</div><h3>Business Management</h3><p>Management reporting, business planning, process improvement and operational support to help teams work more effectively.</p></article>
+        <article class="card"><div class="icon">▥</div><h3>Virtual CFO Services</h3><p>Cash-flow planning, budgeting, forecasting, MIS reporting, profitability analysis and financial decision support.</p></article>
+        <article class="card"><div class="icon">▤</div><h3>Accounting & Bookkeeping</h3><p>Ledger maintenance, bank reconciliation, accounts payable and receivable, monthly closing and financial reporting support.</p></article>
+        <article class="card"><div class="icon">₹</div><h3>Finance & Planning</h3><p>Budget preparation, cost analysis, working-capital monitoring and financial performance reviews.</p></article>
+        <article class="card"><div class="icon">✓</div><h3>Taxation & Compliance</h3><p>GST, income-tax and TDS support, compliance tracking, reconciliations and documentation, subject to applicable requirements.</p></article>
+        <article class="card"><div class="icon">⇄</div><h3>Business Outsourcing</h3><p>Outsourced finance operations, invoice processing, expense administration, payroll coordination and back-office support.</p></article>
+        <article class="card"><div class="icon">◇</div><h3>Corporate & Business Advisory</h3><p>Business incorporation assistance, startup support, MSME-related assistance and corporate compliance coordination.</p></article>
+        <article class="card"><div class="icon">◎</div><h3>Management Reporting</h3><p>Structured reports and useful business information to support reviews, planning and better-informed decisions.</p></article>
+        <article class="card"><div class="icon">↗</div><h3>Flexible Support</h3><p>Engagement scope tailored to your business size, operational needs and internal capabilities.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap feature">
+      <div>
+        <div class="eyebrow">Featured Service</div>
+        <h2>Virtual CFO support for stronger financial visibility.</h2>
+        <p>Move beyond routine bookkeeping with structured reporting and financial insights that help you understand business performance and plan ahead.</p>
+        <div class="checks">
+          <div class="check"><b>✓</b> Monthly MIS reporting</div><div class="check"><b>✓</b> Cash-flow forecasting</div>
+          <div class="check"><b>✓</b> Budgeting & planning</div><div class="check"><b>✓</b> Cost & profitability analysis</div>
+          <div class="check"><b>✓</b> Working-capital review</div><div class="check"><b>✓</b> Financial controls</div>
+        </div>
+        <div class="actions"><a class="btn" href="#contact">Discuss Virtual CFO Services</a></div>
+      </div>
+      <div class="visual">
+        <div class="visual-top"><div><strong style="color:#102b55">Financial Clarity</strong><div class="visual-label">A structured review rhythm</div></div><span class="status">PLAN · TRACK · REVIEW</span></div>
+        <div class="metric"><div class="metric-card"><small>Cash Flow</small><strong>Monitor</strong><small>Visibility & forecast</small></div><div class="metric-card"><small>Performance</small><strong>Measure</strong><small>Budget vs actual</small></div><div class="metric-card"><small>Profitability</small><strong>Understand</strong><small>Cost and margin review</small></div><div class="metric-card"><small>Decisions</small><strong>Improve</strong><small>Evidence-led planning</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="industries">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Who We Serve</div><h2>Support for businesses at every stage</h2><p>We tailor our scope to the requirements, complexity and goals of each organisation.</p></div>
+      <div class="industries"><span class="pill">Startups & Founders</span><span class="pill">Small & Medium Businesses</span><span class="pill">Private Limited Companies</span><span class="pill">Manufacturing</span><span class="pill">Trading & Distribution</span><span class="pill">Professional Services</span><span class="pill">Growing Enterprises</span><span class="pill">Businesses Outsourcing Finance</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head center"><div class="eyebrow">Our Approach</div><h2>Simple, structured, collaborative</h2><p>A clear process to establish the right support for your business.</p></div>
+      <div class="steps">
+        <div class="card"><div class="step-num">1</div><h3>Understand</h3><p>Discuss your business, current processes and priorities.</p></div>
+        <div class="card"><div class="step-num">2</div><h3>Assess</h3><p>Identify requirements, gaps and an appropriate scope of work.</p></div>
+        <div class="card"><div class="step-num">3</div><h3>Implement</h3><p>Agree responsibilities, workflows, timelines and reporting.</p></div>
+        <div class="card"><div class="step-num">4</div><h3>Review</h3><p>Monitor progress and refine support as your needs evolve.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="contact">
+    <div class="wrap">
+      <div class="cta" style="margin-bottom:38px"><div><h2>Let's make business management clearer.</h2><p>Tell us what your business needs. Let's explore the right support for you.</p></div><a class="btn" href="https://wa.me/918233493868" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      <div class="contact-grid">
+        <div><div class="eyebrow">Get in Touch</div><h2>Start a conversation with FINHRIX.</h2><p>Contact us to discuss your business management, finance, accounting, compliance or outsourcing requirements.</p>
+          <div class="contact-line"><strong>Email</strong><a href="mailto:Cofounder@finhrix.com">Cofounder@finhrix.com</a></div>
+          <div class="contact-line"><strong>WhatsApp</strong><a href="https://wa.me/918233493868" target="_blank" rel="noopener">+91 82334 93868</a></div>
+          <div class="contact-line"><strong>Website</strong>www.finhrix.com</div>
+        </div>
+        <div class="contact-box">
+          <h3>Enquiry form</h3>
+          <p style="font-size:13px">This free version opens an email draft on your device; it does not store or automatically submit enquiries.</p>
+          <form id="enquiryForm">
+            <div><label for="name">Full name *</label><input id="name" name="name" required autocomplete="name"></div>
+            <div><label for="company">Company name</label><input id="company" name="company" autocomplete="organization"></div>
+            <div><label for="email">Business email *</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+            <div><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="full"><label for="service">Service required</label><select id="service" name="service"><option>Virtual CFO Services</option><option>Business Management</option><option>Accounting & Bookkeeping</option><option>Finance & Planning</option><option>Taxation & Compliance</option><option>Business Outsourcing</option><option>Corporate & Business Advisory</option><option>Other</option></select></div>
+            <div class="full"><label for="message">Briefly describe your requirements</label><textarea id="message" name="message"></textarea></div>
+            <div class="full"><button class="btn" type="submit">Prepare Enquiry Email</button><p class="form-note">By contacting us, you agree that FINHRIX may use the information you provide to respond to your enquiry.</p></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap footer-row"><div><div class="footer-brand">FINH<span>R</span>IX</div><p>Finhrix Advisory Services Private Limited<br>Business management · Finance · Advisory · Outsourcing</p></div><div class="footer-links"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a><a href="mailto:Cofounder@finhrix.com">Email Us</a></div></div>
+  <div class="wrap" style="margin-top:24px;border-top:1px solid #29415f;padding-top:16px"><p>© <span id="year"></span> Finhrix Advisory Services Private Limited. All rights reserved. Service availability is subject to engagement scope and applicable professional requirements.</p></div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('enquiryForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const f = new FormData(e.target);
+    const subject = encodeURIComponent('FINHRIX Website Enquiry - ' + (f.get('service') || 'General'));
+    const body = encodeURIComponent(
+      'Name: ' + f.get('name') + '\\n' +
+      'Company: ' + f.get('company') + '\\n' +
+      'Email: ' + f.get('email') + '\\n' +
+      'Mobile: ' + f.get('phone') + '\\n' +
+      'Service: ' + f.get('service') + '\\n\\n' +
+      'Requirements:\\n' + f.get('message')
+    );
+    window.location.href = 'mailto:Cofounder@finhrix.com?subject=' + subject + '&body=' + body;
+  });
+</script>
+</body>
+</html>
